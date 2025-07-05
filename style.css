@@ -14,43 +14,105 @@ body {
 }
 
 main {
-  
+  max-width: 130rem;
+  width: 90%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template:
+    "criacao reviews reviews agenda"
+    "criacao reviews reviews agenda"
+    "chamada plataformas agendamento agenda"
+    "chamada audiencia crescimento crescimento" / 1fr;
+  gap: 2rem;
 }
 
 .card {
   border-radius: 1rem;
-  border: solid;
-  padding: 2rem;
-  margin: 1rem;
 }
 
 .card-reviews {
-  background:  hsl(256, 67%, 59%);
+  background: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
+  grid-area: reviews;
+  padding: 2rem;
   text-align: center;
-  padding: 5rem;
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
   div {
-    width: 20rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    img {
+      width: 20rem;
+    }
   }
 }
 
 .card-reviews h1 {
+  font-size: 5rem;
   font-weight: 500;
-  font-size: 4.5rem;
+  line-height: 5rem;
   span {
-      color: hsl(39, 100%, 71%);
+    color: hsl(39, 100%, 71%);
   }
 }
 
-.card img {
-  width: 100%;
+.card-plataformas {
+  grid-area: plataformas;
+  background: hsl(0, 0%, 100%);
+  div {
+    
+  }
 }
 
-.attribution {
+.card-plataformas h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.card-agendamento {
+  grid-area: agendamento;
+  background: hsl(39, 100%, 71%);
+
+}
+
+.card-agenda {
+  grid-area: agenda;
+  background: hsl(254, 88%, 90%);
+
+}
+
+.card-crescimento {
+  grid-area: crescimento;
+  background: hsl(256, 67%, 59%);
+
+}
+
+.card-audiencia {
+  grid-area: audiencia;
+  background: hsl(0, 0%, 100%);
+}
+
+.card-criacao {
+  grid-area: criacao;
+  background: hsl(31, 66%, 93%);
+}
+
+.card-chamada {
+  grid-area: chamada;
+  background: hsl(39, 100%, 71%);
+}
+
+img {
+  width: 100%;
+
+}
+
+attribution {
   font-size: 11px;
   text-align: center;
 }
