@@ -11,6 +11,7 @@ html {
 body {
   font-family: DM Sans;
   font-size: 1.8rem;
+  background-color: #f6f6f6;
 }
 
 main {
@@ -34,7 +35,7 @@ main {
   background: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
   grid-area: reviews;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -64,14 +65,18 @@ main {
 .card-plataformas {
   grid-area: plataformas;
   background: hsl(0, 0%, 100%);
+  padding: 3rem;
   div {
-    
+    background: url(./assets/images/illustration-multiple-platforms.webp);
+    height: 5rem;
+    background-size: cover;
   }
 }
 
 .card-plataformas h2 {
   font-size: 4rem;
-  line-height: 5rem;
+  line-height: 3.2rem;
+  font-weight: 500;
 }
 
 .card-agendamento {
