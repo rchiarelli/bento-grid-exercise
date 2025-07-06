@@ -17,12 +17,23 @@ body {
 main {
   max-width: 130rem;
   width: 90%;
+  max-height: 100vh;
   margin: 5rem auto;
   display: grid;
   align-items: start;
-  grid-template: auto / repeat(4, 1fr);
+  /*grid-template: auto / repeat(4, 1fr);*/
+  grid-template:
+    "cria review review agenda"
+    "cria review review agenda"
+    "cria review review agenda"
+    "cria plat agendam agenda"
+    "chama plat agendam agenda"
+    "chama plat agendam agenda"
+    "chama audi cresci cresci"
+    "chama audi cresci cresci"
+    "chama audi cresci cresci";
   gap: 5rem;
-  //place-items: center;
+  /*place-items: center;*/
   border: solid;
 }
 
@@ -33,7 +44,8 @@ main {
 
 .card-reviews {
   border: solid red;
-  grid-area: 1/2/3/4;
+  /*grid-area: 1/2/3/4;*/
+  grid-area: review;
   background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
   padding: 3rem;
@@ -47,7 +59,6 @@ main {
   font-size: 6rem;
   line-height: 6rem;
   font-weight: 500;
-
   span {
     color: hsl(39, 100%, 71%);
   }
@@ -58,7 +69,6 @@ main {
   flex-flow: column;
   align-items: center;
   padding: 3rem 0 0 0;
-
   img {
     width: 20rem;
   }
@@ -66,9 +76,10 @@ main {
 
 .card-plataformas {
   border: solid green;
-  grid-area: 3/2/5/3;
+  /*grid-area: 3/2/5/3;*/
+  grid-area: plat;
   background-color: hsl(0, 0%, 100%);
-
+  
   .imagem-plataformas {
     background: url(./assets/images/illustration-multiple-platforms.webp);
     background-size: cover;
@@ -86,10 +97,11 @@ main {
 
 .card-agendamento {
   border: solid yellow;
-  grid-area: 3/3/5/4;
+  /*grid-area: 3/3/5/4;*/
+  grid-area: agendam;
   background-color: hsl(39, 100%, 71%);
   padding: 2rem 2rem 0 2rem;
-
+  
   .imagem-agendamento {
     background: url(./assets/images/illustration-consistent-schedule.webp);
     background-size: cover;
@@ -106,18 +118,15 @@ main {
 
 .card-agenda {
   border: solid blue;
-  grid-area: 1/4/5/5;
+  /*grid-area: 1/4/5/5;*/
+  grid-area: agenda;
   background-color: hsl(254, 88%, 90%);
   padding: 4rem 0 2rem 4rem;
   text-align: left;
   div {
-    //background: url(./assets/images/illustration-schedule-posts.webp);
-    //background-size: cover;
-    //height: 30%;
-
-    img {
-      
-    }
+    width: 40rem;
+    overflow: hidden;
+    img {}
   }
 }
 
@@ -136,16 +145,18 @@ main {
 
 .card-crescimento {
   border: solid orange;
-  grid-area: 5/3/6/5;
+  /*grid-area: 5/3/6/5;*/
+  grid-area: cresci;
   background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
   padding: 3rem;
   display: flex;
   align-items: center;
   gap: 2rem;
-
+  
   .imagem-crescimento {
-    width: 100%;
+    width: 50rem;
+
     img {
       width: 100%;
     }
@@ -160,12 +171,14 @@ main {
 
 .card-audiencia {
   border: solid lime;
-  grid-area: 5/2/6/3;
+  /*grid-area: 5/2/6/3;*/
+  grid-area: audi;
   background-color: hsl(0, 0%, 100%);
   padding: 3rem;
   display: flex;
   flex-flow: column;
   gap: 2rem;
+
   .imagem-audiencia {
     img {
       width: 100%;
@@ -185,14 +198,17 @@ main {
 
 .card-criacao {
   border: solid cyan;
-  grid-area: 1/1/4/2;
+  /*grid-area: 1/1/4/2;*/
+  grid-area: cria;
   background-color: hsl(254, 88%, 90%);
   padding: 2rem;
   display: flex;
   flex-flow: column;
   gap: 10rem;
+
   .imagem-criacao {
     width: 100%;
+
     img {
       width: 100%;
     }
@@ -203,6 +219,7 @@ main {
   font-size: 6rem;
   line-height: 6rem;
   font-weight: 500;
+
   span {
     color: hsl(256, 67%, 59%);
   }
@@ -210,14 +227,17 @@ main {
 
 .card-chamada {
   border: solid pink;
-  grid-area: 4/1/6/2;
+  /*grid-area: 4/1/6/2;*/
+  grid-area: chama;
   background-color: hsl(39, 100%, 71%);
   padding: 2rem;
   display: flex;
   flex-flow: column;
   gap: 8rem;
+
   .imagem-chamada {
     width: 100%;
+
     img {
       width: 100%;
     }
