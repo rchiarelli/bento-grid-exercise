@@ -22,13 +22,16 @@ main {
   display: grid;
   /*grid-template: auto / repeat(4, 1fr);*/
   grid-template:
-    "cria review review agenda"
-    "cria review review agenda"
-    "cria plat agendam agenda"
-    "chama plat agendam agenda"
-    "chama plat agendam agenda"
-    "chama audi cresci cresci"
-    "chama audi cresci cresci" / 1fr;
+    "cria review review agenda" 75px
+    "cria review review agenda" 75px
+    "cria review review agenda" 75px
+    "cria review review agenda" 75px
+    "cria plat agendam agenda" 75px
+    "chama plat agendam agenda" 75px
+    "chama plat agendam agenda" 75px
+    "chama audi cresci cresci" 75px
+    "chama audi cresci cresci" 75px
+    "chama audi cresci cresci" 75px;
   gap: 2rem;
   /*place-items: center;*/
 }
