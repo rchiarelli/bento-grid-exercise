@@ -19,8 +19,9 @@ main {
   width: 90%;
   margin: 5rem auto;
   display: grid;
-  grid-template: 12.5% 12.5% 20% 15% 30%/ repeat(4, 1fr);
-  gap: 2rem;
+  align-items: start;
+  grid-template: auto / repeat(4, 1fr);
+  gap: 5rem;
   //place-items: center;
   border: solid;
 }
@@ -110,9 +111,13 @@ main {
   padding: 4rem 0 2rem 4rem;
   text-align: left;
   div {
-    background: url(./assets/images/illustration-schedule-posts.webp);
-    background-size: cover;
-    height: 400px;
+    //background: url(./assets/images/illustration-schedule-posts.webp);
+    //background-size: cover;
+    //height: 30%;
+
+    img {
+      
+    }
   }
 }
 
@@ -185,7 +190,7 @@ main {
   padding: 2rem;
   display: flex;
   flex-flow: column;
-  gap: 3rem;
+  gap: 10rem;
   .imagem-criacao {
     width: 100%;
     img {
