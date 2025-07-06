@@ -19,102 +19,210 @@ main {
   width: 90%;
   margin: 5rem auto;
   display: grid;
-  grid-template:
-    "criacao reviews reviews agenda"
-    "criacao reviews reviews agenda"
-    "chamada plataformas agendamento agenda"
-    "chamada audiencia crescimento crescimento" / 1fr;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
   gap: 2rem;
+  //place-items: center;
+  border: solid;
 }
 
 .card {
   border-radius: 1rem;
+  border: solid;
 }
 
 .card-reviews {
-  background: hsl(256, 67%, 59%);
+  border: solid red;
+  grid-area: 1/2/3/4;
+  background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
-  grid-area: reviews;
   padding: 3rem;
-  text-align: center;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
-  div {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3rem;
-    img {
-      width: 20rem;
-    }
-  }
+  text-align: center;
 }
 
 .card-reviews h1 {
-  font-size: 5rem;
+  font-size: 6rem;
+  line-height: 6rem;
   font-weight: 500;
-  line-height: 5rem;
+
   span {
     color: hsl(39, 100%, 71%);
   }
 }
 
+.imagem-reviews {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3rem 0 0 0;
+
+  img {
+    width: 20rem;
+  }
+}
+
 .card-plataformas {
-  grid-area: plataformas;
-  background: hsl(0, 0%, 100%);
-  padding: 3rem;
-  div {
+  border: solid green;
+  grid-area: 3/2/5/3;
+  background-color: hsl(0, 0%, 100%);
+
+  .imagem-plataformas {
     background: url(./assets/images/illustration-multiple-platforms.webp);
-    height: 5rem;
     background-size: cover;
+    height: 8.5rem;
+    margin: 1rem 0 0 2rem;
   }
 }
 
 .card-plataformas h2 {
-  font-size: 4rem;
-  line-height: 3.2rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: 500;
+  padding: 1rem 0 3rem 2rem;
 }
 
 .card-agendamento {
-  grid-area: agendamento;
-  background: hsl(39, 100%, 71%);
+  border: solid yellow;
+  grid-area: 3/3/5/4;
+  background-color: hsl(39, 100%, 71%);
+  padding: 2rem 2rem 0 2rem;
 
+  .imagem-agendamento {
+    background: url(./assets/images/illustration-consistent-schedule.webp);
+    background-size: cover;
+    height: 12rem;
+    margin-top: 5rem;
+  }
+}
+
+.card-agendamento h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 500;
 }
 
 .card-agenda {
-  grid-area: agenda;
-  background: hsl(254, 88%, 90%);
+  border: solid blue;
+  grid-area: 1/4/5/4;
+  background-color: hsl(254, 88%, 90%);
+  padding: 4rem 0 2rem 4rem;
+  text-align: left;
+  div {
+    background: url(./assets/images/illustration-schedule-posts.webp);
+    background-size: cover;
+    height: 400px;
+  }
+}
 
+.card-agenda h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.card-agenda p {
+  font-size: 2.3rem;
+  line-height: 3rem;
+  margin-top: 5rem;
 }
 
 .card-crescimento {
-  grid-area: crescimento;
-  background: hsl(256, 67%, 59%);
+  border: solid orange;
+  grid-area: 5/3/7/5;
+  background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 
+  .imagem-crescimento {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card-crescimento h2 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-weight: 500;
 }
 
 .card-audiencia {
-  grid-area: audiencia;
-  background: hsl(0, 0%, 100%);
+  border: solid lime;
+  grid-area: 5/2/7/3;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  .imagem-audiencia {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card-audiencia p:first-child {
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 500;
+}
+
+.card-audiencia p {
+  font-size: 2.2rem;
 }
 
 .card-criacao {
-  grid-area: criacao;
-  background: hsl(31, 66%, 93%);
+  border: solid cyan;
+  grid-area: 1/1/4/2;
+  background-color: hsl(254, 88%, 90%);
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  .imagem-criacao {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card-criacao h2 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 500;
+  span {
+    color: hsl(256, 67%, 59%);
+  }
 }
 
 .card-chamada {
-  grid-area: chamada;
-  background: hsl(39, 100%, 71%);
+  border: solid pink;
+  grid-area: 4/1/7/2;
+  background-color: hsl(39, 100%, 71%);
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  gap: 8rem;
+  .imagem-chamada {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
 }
 
-img {
-  width: 100%;
-
+.card-chamada h2 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 500;
 }
 
 attribution {
@@ -125,3 +233,12 @@ attribution {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* 
+    "criacao reviews reviews agenda"
+    "criacao reviews reviews agenda"
+    "criacao plataformas agendamento agenda" 
+    "chamada plataformas agendamento agenda"
+    "chamada audiencia crescimento crescimento"
+    
+    */
