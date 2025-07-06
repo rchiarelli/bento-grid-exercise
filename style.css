@@ -17,22 +17,18 @@ body {
 main {
   max-width: 130rem;
   width: 90%;
-  max-height: 100vh;
+  height: 100vh;
   margin: 5rem auto;
   display: grid;
-  align-items: start;
   /*grid-template: auto / repeat(4, 1fr);*/
   grid-template:
     "cria review review agenda"
     "cria review review agenda"
-    "cria review review agenda"
     "cria plat agendam agenda"
     "chama plat agendam agenda"
-    "chama plat agendam agenda"
-    "chama audi cresci cresci"
     "chama audi cresci cresci"
     "chama audi cresci cresci";
-  gap: 5rem;
+  gap: 2rem;
   /*place-items: center;*/
   border: solid;
 }
@@ -48,10 +44,11 @@ main {
   grid-area: review;
   background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
-  padding: 3rem;
+  padding: 4rem 4rem;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -79,20 +76,23 @@ main {
   /*grid-area: 3/2/5/3;*/
   grid-area: plat;
   background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  overflow: hidden;
   
   .imagem-plataformas {
-    background: url(./assets/images/illustration-multiple-platforms.webp);
-    background-size: cover;
-    height: 8.5rem;
-    margin: 1rem 0 0 2rem;
+    padding: 2rem 0 0 3rem;
+    width: 30rem;
+    img {
+      width: 100%;
+    }
   }
 }
 
 .card-plataformas h2 {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 500;
-  padding: 1rem 0 3rem 2rem;
+  padding: 2rem;
 }
 
 .card-agendamento {
@@ -100,13 +100,15 @@ main {
   /*grid-area: 3/3/5/4;*/
   grid-area: agendam;
   background-color: hsl(39, 100%, 71%);
-  padding: 2rem 2rem 0 2rem;
+  padding: 3rem 2rem 0 2rem;
+  overflow: hidden;
   
   .imagem-agendamento {
-    background: url(./assets/images/illustration-consistent-schedule.webp);
-    background-size: cover;
-    height: 12rem;
-    margin-top: 5rem;
+    width: 100%;
+    padding-top: 4rem;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -121,26 +123,29 @@ main {
   /*grid-area: 1/4/5/5;*/
   grid-area: agenda;
   background-color: hsl(254, 88%, 90%);
-  padding: 4rem 0 2rem 4rem;
-  text-align: left;
+  padding: 4rem 3rem 4rem 3rem;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  
   div {
-    width: 40rem;
-    overflow: hidden;
-    img {}
+    width: 100%;
+    padding: 3rem 0 3rem 0;
+    img {
+      width: 100%;
+    }
   }
 }
 
 .card-agenda h2 {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: 500;
-  margin-bottom: 3rem;
 }
 
 .card-agenda p {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
-  margin-top: 5rem;
 }
 
 .card-crescimento {
@@ -164,8 +169,8 @@ main {
 }
 
 .card-crescimento h2 {
-  font-size: 4.5rem;
-  line-height: 4.5rem;
+  font-size: 5.5rem;
+  line-height: 5rem;
   font-weight: 500;
 }
 
@@ -177,9 +182,10 @@ main {
   padding: 3rem;
   display: flex;
   flex-flow: column;
-  gap: 2rem;
+  gap: 3rem;
 
   .imagem-audiencia {
+    width: 20rem;
     img {
       width: 100%;
     }
@@ -187,13 +193,13 @@ main {
 }
 
 .card-audiencia p:first-child {
-  font-size: 8rem;
-  line-height: 8rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: 500;
 }
 
 .card-audiencia p {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .card-criacao {
@@ -204,7 +210,7 @@ main {
   padding: 2rem;
   display: flex;
   flex-flow: column;
-  gap: 10rem;
+  gap: 5rem;
 
   .imagem-criacao {
     width: 100%;
@@ -216,8 +222,8 @@ main {
 }
 
 .card-criacao h2 {
-  font-size: 6rem;
-  line-height: 6rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: 500;
 
   span {
@@ -233,11 +239,11 @@ main {
   padding: 2rem;
   display: flex;
   flex-flow: column;
-  gap: 8rem;
+  gap: 5rem;
 
   .imagem-chamada {
     width: 100%;
-
+    padding-top: 4rem;
     img {
       width: 100%;
     }
@@ -245,8 +251,8 @@ main {
 }
 
 .card-chamada h2 {
-  font-size: 6rem;
-  line-height: 6rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: 500;
 }
 
