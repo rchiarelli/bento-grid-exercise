@@ -47,12 +47,12 @@ main {
   color: hsl(0, 0%, 100%);
   padding: 4rem;
   text-align: center;
-
+  
   h1 {
     font-size: 6rem;
     line-height: 95%;
     font-weight: 500;
-
+    
     span {
       color: hsl(39, 100%, 71%);
     }
@@ -68,7 +68,7 @@ main {
   padding: 4rem 0 0 0;
   width: 26rem;
   justify-self: center;
-
+  
   img {
     width: 100%;
   }
@@ -83,7 +83,7 @@ main {
   .imagem-plataformas {
     padding: 2rem 0 0 3rem;
     width: 33rem;
-
+    
     img {
       width: 100%;
     }
@@ -104,11 +104,11 @@ main {
   flex-flow: column;
   align-items: center;
   overflow: hidden;
-
+  
   .imagem-agendamento {
     width: 20rem;
     padding-top: 3rem;
-
+    
     img {
       width: 100%;
     }
@@ -130,7 +130,7 @@ main {
   .imagem-agenda {
     width: 38rem;
     padding: 3rem 0 3rem 0;
-
+    
     img {
       width: 100%;
     }
@@ -183,7 +183,7 @@ main {
   .imagem-audiencia {
     width: 20rem;
     margin-top: 3rem;
-
+    
     img {
       width: 100%;
     }
@@ -203,7 +203,7 @@ main {
 .card-criacao {
   grid-area: cria;
   background-color: hsl(31, 66%, 93%);
-  padding: 3rem 2rem ;
+  padding: 3rem 2rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -241,7 +241,7 @@ main {
   .imagem-chamada {
     width: 20rem;
     padding-top: 4rem;
-
+    
     img {
       width: 100%;
     }
@@ -261,4 +261,91 @@ attribution {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  
+  main {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 
+    "review review"
+    "review review"
+    "plat plat"
+    "plat plat"
+    "agendam agendam"
+    "agendam agendam"
+    "agenda agenda"
+    "agenda agenda"
+    "cresci cresci"
+    "cresci cresci"
+    "audi audi"
+    "audi audi"
+    "cria cria"
+    "cria cria"
+    "chama chama"
+    "chama chama"
+    ;
+  }
+  
+  .card-reviews {
+    
+    h1 {
+      font-size: 4rem;
+    }
+    
+    p {
+      font-size: 1.8rem;
+    }
+    
+    
+    .imagem-reviews {
+      width: 20rem;
+    }
+  }
+  
+  .card-plataformas {
+    padding: 2rem;
+    
+    h2 {
+      font-size: 2rem;
+    }
+    .imagem-plataformas {
+      padding: 0;
+      margin: 0;
+      width: 28rem;
+    }
+  }
+  
+  .card-agendamento {
+    align-items: start;
+    justify-content: space-between;
+    padding: 2rem 4rem 0 2rem;
+    
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    .imagem-agendamento {
+      transform: translate(0, 10px);
+      
+    }
+  }
+  
+  .card-crescimento {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    .imagem-crescimento {
+      width: 25rem;
+    }
+  }
+  
+  .card-criacao {
+    .imagem-criacao {
+      width: 20rem;
+    }
+  }
 }
