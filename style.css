@@ -46,6 +46,10 @@ main {
   background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
   padding: 4rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   
   h1 {
@@ -59,15 +63,15 @@ main {
   }
   
   p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    line-height: 95%;
     font-weight: 500;
   }
 }
 
 .imagem-reviews {
   padding: 4rem 0 0 0;
-  width: 26rem;
-  justify-self: center;
+  width: 20rem;
   
   img {
     width: 100%;
@@ -131,8 +135,8 @@ main {
     width: 38rem;
     padding: 3rem 0 3rem 0;
     
-    img {
-      width: 100%;
+    & img {
+      width: 80%;
     }
   }
 }
@@ -168,6 +172,7 @@ main {
 
 .card-crescimento h2 {
   font-size: 4rem;
+  padding: 0 2rem;
   line-height: 95%;
   font-weight: 500;
 }
@@ -270,22 +275,22 @@ attribution {
     margin: 0 auto;
     display: grid;
     grid-template: 
-    "review review"
-    "review review"
-    "plat plat"
-    "plat plat"
-    "agendam agendam"
-    "agendam agendam"
-    "agenda agenda"
-    "agenda agenda"
-    "cresci cresci"
-    "cresci cresci"
-    "audi audi"
-    "audi audi"
-    "cria cria"
-    "cria cria"
-    "chama chama"
-    "chama chama"
+    "review"
+    "review"
+    "plat"
+    "plat"
+    "agendam"
+    "agendam"
+    "agenda"
+    "agenda"
+    "cresci"
+    "cresci"
+    "audi"
+    "audi"
+    "cria"
+    "cria"
+    "chama"
+    "chama"
     ;
   }
   
@@ -293,6 +298,7 @@ attribution {
     
     h1 {
       font-size: 4rem;
+      padding: 0;
     }
     
     p {
@@ -301,7 +307,7 @@ attribution {
     
     
     .imagem-reviews {
-      width: 20rem;
+      width: 18rem;
     }
   }
   
@@ -309,7 +315,7 @@ attribution {
     padding: 2rem;
     
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .imagem-plataformas {
       padding: 0;
@@ -320,24 +326,52 @@ attribution {
   
   .card-agendamento {
     align-items: start;
-    justify-content: space-between;
-    padding: 2rem 4rem 0 2rem;
-    
+    padding: 2rem 2rem 0 2rem;
+    overflow: hidden;
     
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     
     .imagem-agendamento {
-      transform: translate(0, 10px);
-      
+      padding-top: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .card-agenda {
+    overflow: unset;
+    padding: 2rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      padding: 0 5rem;
     }
   }
   
+.imagem-agenda {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  img {
+    width: 100%;
+  }
+} 
+
   .card-crescimento {
     display: flex;
     flex-flow: column;
     gap: 2rem;
+    text-align: center;
     .imagem-crescimento {
       width: 25rem;
     }
